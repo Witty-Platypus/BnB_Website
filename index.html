@@ -61,7 +61,7 @@
         <div id="site-head-content" class="inner">
 
             <h1><img class="header-logo" src="images/logo.png"></h1>
-                <a class='btn site-menu site-menu-main' data-title-anchor='play-the-game'>Play the Game!</a>
+                <a class='btn site-menu site-menu-main' data-title-anchor='play-the-game'>Play the game!</a>
                 <br>
                  <a class='btn site-menu' data-title-anchor='watch-trailer'>Watch Trailer</a>
 
@@ -71,11 +71,39 @@
         </div>
     </div>
 </header>
-<main class="content" role="main">
 
+<div class="social-media-wrapper">
+    <ul class="social-media-list">
+        <li class="social-media-item">
+            <a href="./steam" target="_blank">
+                <i class="fab fa-steam" title="Steam Page" aria-label="Steam Page"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="./oculus" target="_blank">
+                <i class="fab fa-brands fa-meta" title="AppLab" aria-label="AppLab"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="./discord" target="_blank">
+                <i class="fab fa-discord" title="Discord" aria-label="Join Discord"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="./twitter" target="_blank">
+                <i class="fab fa-twitter" title="Twitter" aria-label="Follow us on Twitter"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="./reddit" target="_blank">
+                <i class="fab fa-reddit" title="Reddit" aria-label="Join our sub-reddit"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<main class="content" role="main">
     <div class='fixed-nav'>
     </div>
-    
         <div class='post-holder'>
             <article id='play-the-game' class='post first '>
                 <header class="post-header">
@@ -104,41 +132,19 @@
                         <p class="pre_countdown_timer">
                             Releasing in...
                         </p>
-                        <p id="countdown_timer" class="countdown_timer">
-                            
-                        </p>
+                        <p id="countdown_timer" class="countdown_timer"></p>
                     </div>
                     <div class="buy-game">
                         <div class="buy-game-column">
+                            <img src="images/kangaroo.png" alt="Kangaroo stealing a beer">
+                        </div>
+                        <div class="buy-game-column">
                             <div class="pre-release">
-                                <p>Beers and Boomerangs will be out on <b>November 22<sup>nd</sup></b>!</p>
-                                <p>In the mean time, try out our demo</p>
-                                <a class='btn demo-btn' href='./applab'><i class="fab fa-brands fa-meta" title="AppLab" aria-label="AppLab" aria-hidden="true"></i>  Demo on Oculus</a>
-                            
-                            </div>
-                            <div class="post-release" style="display:none">
-                                <p>Beers and Boomerangs will be out on <b>November 22<sup>nd</sup></b>!</p>
+                                <p class="pitch-text">IT'S A LOVELY DAY FOR A BBQ, BUT KANGAROOS KEEP TRYING TO STEAL YOUR BEER!</p>
+                                <p class="pitch-text">A chaotic Australian VR experimence</p>
                             </div>
 
                         </div>
-                        <div class="buy-game-column">
-                        </div>
-                    </div>
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='' class='post  '>
-                <header class="post-header">
-                    <h2>Awards and Nominations</h2>
-                </header>
-                <section class="post-content">
-                    <div class="awards">
-                        <img src="images/award1.png">
-                        <img src="images/award2.png">
-                        <img src="images/award3.png">
                     </div>
                 </section>
             </article>
@@ -164,14 +170,47 @@
         </div>
     
         <div class='post-holder'>
+            <article id='' class='post  '>
+                <header class="post-header">
+                    <h2>Awards and Nominations</h2>
+                </header>
+                <section class="post-content">
+                    <div class="awards">
+                        <img src="images/award1.png">
+                        <img src="images/award2.png">
+                        <img src="images/award3.png">
+                        <img src="images/award4.png">
+                    </div>
+                </section>
+            </article>
+            <div class='post-after'></div>
+        </div>
+    
+        <div class='post-holder'>
             <article id='contact-us' class='post  last'>
                 <header class="post-header">
                     <h2 class="post-title">Contact us</h2>
                 </header>
                 <section class="post-content">
-                    <p><i class="fa fa-envelope"></i> <a href="mailto:your-email@your-domain.com">mail@janedoe.com</a></p>
-<p><i class="fa fa-phone"></i> <a href="tel:+491111555555">+49 1111 555555</a></p>
-<p>Let us get in touch!</p>
+                    <h3>Get in touch!</h3>
+                    <p>We are still improving this game and we would love to know your thoughts!<br>
+                        If you found any bug or just want to say 'Hi' the best ways to do so is through:</p>
+                    <ul class="contact-us">
+                        <li>
+                            <a href="./discord" target="_blank">
+                                <i class="fab fa-discord" title="Discord" aria-label="Join Discord"></i>
+                                <br>
+                                Join our Discord server
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:contact@beersandboomerangs.com" target="_blank">
+                                <i class="fas fa-envelope" title="Email" aria-label="Email"></i>
+                                <br>
+                                Email us at contact@beersandboomerangs.com
+                            </a>
+                        </li>
+                    </ul>
 
                 </section>
             </article>
@@ -183,9 +222,7 @@
   <div class="inner">
     
       <section class="copyright">© Witty Platypus</section>
-
-
-    <section></section>
+      <section></section>
     
       <section>
         Design based on <a href="https://themes.gohugo.io/hugo-scroll/">template</a> by 

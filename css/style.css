@@ -18,10 +18,35 @@ p {
 h1, h2, h3, h4 {
     font-family: 'Londrina Solid', cursive;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 10rem;
+    line-height: 1;
+}
+
+.post-header > h2 {
+    transform: rotate(-3deg);
+    text-shadow:
+     -5px -5px 0 #2f4073,  
+      5px -5px 0 #2f4073,
+      -5px 5px 0 #2f4073,
+       5px 5px 0 #2f4073,
+       8px 8px 10px rgba(24, 24, 24, 0.8);
+}
+.post-header:nth-child(odd) > h2{
+    transform: rotate(3deg);
+}
+
+.post-header > h2:before {
+    content:"";
+    display: inline-block;
+    background-image: url('../images/boomerang2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1em; 
 }
 
 .header-logo {
@@ -51,9 +76,14 @@ a.btn {
     border-radius: 99px;
 }
 
+a.btn.site-menu {
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
 a.btn.site-menu-main {
     font-size: 32pt;
     padding: 25px 40px;
+    background-color: var(--primary-color);
 }
 
 a.btn:hover {
@@ -90,18 +120,23 @@ a.fn-item:hover {
     margin-bottom: 2em;
 }
 
-.post-holder.odd {
-    background: var(--bg-color-1);
-    background-image: url(images/background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover;
-}
 .post-holder {
+    background: var(--bg-color-1);
+    background-image: url(../images/background2.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    color: white;
+}
+.post-holder.odd {
     background: var(--bg-color-2);
     color: white;
 }
+
+.post-after.even {
+    border-top-color: #a19e96 !important;
+}
+
 body {
     color: #3A4145;
 }
@@ -110,7 +145,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     gap: 10px 30px;
@@ -126,7 +161,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 a.buy-game-btn {
@@ -152,19 +187,21 @@ a.demo-btn {
 
 .pre_countdown_timer {
     font-size: 4rem;
+    margin: 1em 0 0.1em 0;
     font-family: 'Londrina Solid', cursive;
 }
 
 .countdown_timer {
     font-size: 8rem;
-    margin:0.5em 0;
+    margin:0.1em 0;
     line-height: 90%;
     font-family: 'Londrina Solid', cursive;
+    text-shadow: 0 2PX 5px rgb(10, 10, 10, 0.3);
 }
 
 .awards > img {
-    min-width: 200px;
-    width: 28%;
+    min-width: 120px;
+    width: 20%;
     max-width: 400px;
     margin: 20px;
 }
@@ -229,4 +266,87 @@ a.demo-btn {
 
 .big >.icon {
     height: 2.5em;
+}
+
+.pitch-text {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2.5em;
+    line-height: 90%;
+}
+
+/* SOCIAL MEDIA STUFF */
+.social-media-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.social-media-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.social-media-item {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.social-media-item > a {
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+.social-media-item > a:hover {
+    background-color: #2f407336;
+    color: white;
+}
+.social-media-item > a::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/boomerang.png");
+    background-size: cover;
+    width: 1em;
+    height: 1em;
+    left: 0.8rem;
+    right: 15rem;
+    opacity: 0;
+    transform: rotate(500deg);
+    transition: all 0.5s cubic-bezier(0.54, -0.29, 0.36, 1.38);
+}
+.social-media-item > a:hover::before {
+    bottom: 1.7rem;
+    transform: rotate(-130deg);
+    opacity: 1; 
+}
+
+/* CONTACT US */
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-us > li {
+    min-width: max(30%, 150px);
+    margin: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.contact-us > li > a {
+    font-family: 'Londrina solid', cursive;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: transparent;
+    padding: 2rem 2rem;
+    vertical-align: middle;
+}
+.contact-us > li > a:hover {
+    background-color: #ffffff36;
+    color: #2f4073;
+}
+.contact-us > li > a > i {
+    font-size: 10rem;
 }

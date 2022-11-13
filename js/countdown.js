@@ -23,9 +23,10 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown_timer").innerHTML = "Out now!";
-    document.querySelectorAll(".buy-game-btn").forEach(element => {
-        element.classList.remove("btn-disabled");
-    });
+    document.getElementById("countdown_timer").innerHTML = "OUT NOW!";
+    var elements = document.getElementsByClassName("countdown_timer_wrapper");
+    while(elements.length > 0){
+        elements[0].removeChildren();
+    }
   }
 }, 1000);

@@ -141,21 +141,19 @@ h3,
 h4,
 h5,
 h6 {
-    text-rendering: optimizeLegibility;
     line-height: 1;
     margin-top: 0;
     margin-bottom: 10px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Londrina Solid", cursive;
 }
 
 h3,
 h4,
 h5,
 h6 {
-    text-rendering: optimizeLegibility;
     line-height: 120%;
     margin-top: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Londrina Solid", cursive;
     margin-bottom: 0%;
 }
 
@@ -692,7 +690,7 @@ a.fn-item.active {
 
 .publish-heading {
     display: block;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .publish-date {
