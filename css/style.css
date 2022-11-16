@@ -521,7 +521,7 @@ a.demo-btn {
 
 .secondary-navbar-item>a {
     text-decoration: none;
-    padding: 2rem;
+    padding: 2rem 3rem;
     font-size: 2.5rem;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -534,7 +534,14 @@ a.demo-btn {
 .secondary-navbar-item>a:hover {
     border-bottom: 5px solid white;
     background-color: #2f407385;
-    ;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .secondary-navbar-item>a {
+        text-decoration: none;
+        padding: 0.6rem 1rem;
+        font-size: 1.5rem;
+    }
 }
 
 
