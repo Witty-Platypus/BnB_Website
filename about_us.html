@@ -2,25 +2,38 @@
 <html><meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<title>Beers and Boomerangs</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/png"/>
+<title>Beers & Boomerangs</title>
+<meta name="description"
+    content="VR game - You're having a barbecue but kangaroos are trying to steal your beer! Use your trustworthy boomerang to shoo them away!">
+<meta name="keywords"
+    content="beers and boomerangs, beers, boomerangs, VR, game, barbecue, beer, boomerang, kangaroo, australia, aussie, bears, bear, hamburgers, rangs, roos">
+<script type="application/ld+json">
+    {"@type": "Product",
+        "image": "https://beersandboomerangs.com/img/logo.png",
+        "url": "http://beersboomerangs.com",
+        "name": "Beers & Boomerangs (VR Game)"
+    }
+</script>
 
-
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/png"
-/>
-
-
-  <meta name="description" content="Nutrition Coach &amp; Chef Consultant"
-/>
-
-  <meta name="keywords" content="some, keywords, for, seo, you, know, google, duckduckgo, and, such"
-/>
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3LS0ZDQWWL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3LS0ZDQWWL');
+</script>
+
 <link rel="stylesheet" href="css/screen.css" />
+<link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/fonts.css" type="text/css" />
 <link
   rel="stylesheet"
@@ -29,224 +42,158 @@
 />
 
 <meta property="og:title" content="" />
-<meta property="og:description" content="Nutrition Coach &amp; Chef Consultant" />
+<meta property="og:description" content="Beers and Boomerangs" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="./" /><meta property="og:image" content="images/cover-image.jpg"/><meta property="og:site_name" content="Beers and Boomerangs VR" />
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="images/cover-image.jpg"/>
-
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Nutrition Coach &amp; Chef Consultant"/>
+<meta property="og:url" content="./" /><meta property="og:image" content="images/cover-image.jpg"/><meta property="og:site_name" content="Beers and Boomerangs" />
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="Nutrition Coach &amp; Chef Consultant">
+<meta itemprop="description" content="Beers and Boomerangs">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --primary-color: #f35a5a;
-  --primary-color-dark: #e62e2e;
-  --bg-color-1: #4A91D3;
-  --bg-color-2: #2f4073;
-  --bg-color-test: #f7b36f;
-  --bg-color-test2: #37b7dd;
-  --bg-color-test3: #ee774f;
-}
-     * {
-          font-family: "Oswald", sans-serif;
-     }
-
-     h1, h2, h3, h4 {
-          font-family: 'Londrina Solid', cursive;
-          text-transform: uppercase;
-          letter-spacing: 0px;
-     }
-
-     h2 {
-          font-size: 5rem;
-     }
-
-     .header-logo {
-          width: min(700px, 80vw);
-          filter: drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.5));
-     }
-
-      
-     a:hover {
-         color: var(--primary-color-dark);
-     }
-
-      
-     a.btn {
-          margin-left: 6px;
-          margin-right: 6px;
-          color: white;
-          background-color: var(--primary-color);
-          border: 3px solid white;
-           
-          box-shadow: 0px 0px 30px 10px #fff;
-          padding: 18px 35px;
-          font-size: 20pt;
-          border-radius: 99px;
-     }
-     
-     a.btn.site-menu-main {
-          font-size: 30pt;
-          padding: 25px 40px;
-     }
-
-     a.btn:hover {
-          background-color: var(--primary-color-dark);
-     }
-
-      
-     a.fn-item {
-          color: white;
-          line-height: 2.5rem;
-          font-size: 2rem;
-     }
-     a.fn-item.active {
-          color: #e62e2e;
-          font-size: 3rem;
-     }
-     a.fn-item:hover {
-          color: #e62e2e;
-     }
-
-    .post-header {
-        text-align: center;
-    }
-
-    .post-content {
-        margin-top: 2em;
-        margin-bottom: 2em;
-    }
-
-     .post-holder.odd {
-        background: var(--bg-color-1);
-        background-image: url(images/background.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center top;
-        background-size: cover;
-     }
-     .post-holder {
-          background: var(--bg-color-2);
-          color: white;
-     }
-     body {
-          color: #3A4145;
-     }
-
-     .buy-game {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px 30px;
-     }
-
-     .buy-game-column {
-        min-width: 47%;
-        width: 250px;
-     }
-
-     a.buy-game-btn {
-          box-shadow: none;
-          width: 70%;
-     }
-
-     .awards > img {
-        min-width: 200px;
-        width: 28%;
-        max-width: 400px;
-        margin: 20px;
-     }
-
-     .awards {
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-     }
-
-     .trailer-container {;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-     }
-
-     .trailer {
-        width: 1008px;
-        height: 567px;
-     }
-    @media only screen and (max-width: 90em) {
-     .trailer {
-        width: 672px;
-        height: 378px;
-     }
-    }
-    @media only screen and (max-width: 68.75em) {
-     .trailer {
-        width: 560px;
-        height: 315px;
-     }
-    }
-    @media only screen and (max-width: 37.5em) {
-     .trailer {
-        width: 448px;
-        height: 252px;
-     }
-    }
-    @media only screen and (max-width: 20em) {
-     .trailer {
-        width: 300px;
-        height: 168px;
-     }
-    }
-
-      .post-title {
-        margin-bottom: .8em;
-      }
-
-     .site-footer {
-          color: #BBC7CC;
-          background-color: #22343A;
-     }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/7d2e3fc036.js" crossorigin="anonymous"></script>
 
 <body>
 
 <main class="content" role="main">
 
-    <div class='fixed-nav'>
-    </div>
-    
-        <div class='post-holder'>
-            <article id='play-the-game' class='post first '>
-                <header class="post-header">
+     <div class='post-holder'>
+          <article id='about-us' class='post'>
+               <header class="post-header">
                     <h2 class="post-title">About us</h2>
-                </header>
-                <section class="post-content">
+               </header>
+               <div class="secondary-navbar-wrapper">
+                    <ul class="secondary-navbar-list">
+                         <li class="secondary-navbar-item">
+                              <a href="./" target="_blank">
+                                   Home
+                              </a>
+                         </li>
+                         <li class="secondary-navbar-item">
+                              <a href="./about_us" target="_blank">
+                                   About us
+                              </a>
+                         </li>
+                         <li class="secondary-navbar-item">
+                              <a href="./press_kit" target="_blank">
+                                   Press Kit
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </article>
+     </div>
+                
+     <div class='post-holder'>
+          <article id='play-the-game' class='post last'>
+               <section class="post-content">
+                    <h3 class="secondary-page-title">About the game</h3>
                     <p>Beers & Boomerangs is a VR game where you are trying to have a peaceful barbecue with your mates, but adorable annoying Kangaroos are trying to steal your beer! Protect your beers with your trustworthy Boomerang.</p>
-                    <h3>THE TEAM</h3>
+                    
+                    <h3 class="secondary-page-title">The team</h3>
                     <p>We are a couple of engineers that enjoy programming, arts, music and games. We started working on this project on our free time in 2020. In 2021, Diogo quit his job to focus on this game full-time - he is the business guy, developer, 3D artist, animator, social media wizzard, and does lots of the cool stuff. Inês joined him full-time in March 2022 - she is also a developer, 2D artist, online services magician, and does lots of cool stuff as well.</p>
                     <p>We moved to a game developer co-living/co-working space in Sweden called Spelkollektivet in January 2021, and we liked it so much that we are still currently living there and in September 2022 we decided to publish our game with them!</p>
                     <p>Reach us at contact@beersandboomerangs.com</p>
+
+                    <div class="team">
+                        <div class="team__item">
+                            <div class="team__img">
+                                <img src="https://pbs.twimg.com/profile_images/488710497500274688/K2v3ZCF__400x400.jpeg"
+                                    alt="Diogo" />
+                            </div>
+                            <p><b>Diogo Cunha</b><br />
+                                <small>diogo@beersandboomerangs.com</small>
+                            </p>
+                            <div class="team__social">
+                                <div class="social__icon">
+                                    <a href="https://twitter.com/jdiogobc/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-twitter" title="Twitter" aria-label="Go to Twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="social__icon">
+                                    <a href="https://diogo-cunha.com/" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-globe" title="Personal Website"
+                                            aria-label="Go to Personal Website"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__img">
+                                <img src="https://ines-almeida.com/me.jpg" alt="Diogo" />
+                            </div>
+                            <p><b>Inês Almeida</b><br />
+                                <small>ines@beersandboomerangs.com</small>
+                            </p>
+                            <div class="team__social">
+                                <div class="social__icon">
+                                    <a href="https://ines-almeida.com/" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-globe" title="Personal Website"
+                                            aria-label="Go to Personal Website"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
+                    <h3 class="secondary-page-title">Top notch kangaroos</h3>
+                    <div class="team">
+                         <div class="team__item">
+                              <div class="team__img">
+                                   <img src="https://pbs.twimg.com/profile_images/1493989071177367555/6q6mcOU7_400x400.jpg"
+                                        alt="Hannibal" />
+                              </div>
+                              <p><b>Hannibal Sigfusson</b><br />
+                                   <i>Composer</i>
+                              </p>
+                              <div class="team__social">
+                                   <div class="social__icon">
+                                        <a href="https://hansig.dk/" target="_blank" rel="noreferrer">
+                                        <i class="fas fa-globe" title="Personal Website"
+                                             aria-label="Go to Personal Website"></i>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="team__item">
+                              <div class="team__img">
+                                   <img src="https://pbs.twimg.com/profile_images/1511908774377787392/FY4aycGB_400x400.jpg"
+                                        alt="Naysy" />
+                              </div>
+                              <p><b>Naysy</b><br />
+                                   <i>Voice Acting</i>
+                              </p>
+                              <div class="team__social">
+                                   <div class="social__icon">
+                                        <a href="https://twitter.com/Naysy" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-twitter" title="Twitter" aria-label="Go to Twitter"></i>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="team__item">
+                              <div class="team__img">
+                                   <img src="https://pbs.twimg.com/profile_images/1572186033684643842/ktrEn9z9_400x400.jpg" alt="Technal" />
+                              </div>
+                              <p><b>Douglas 'Technal' Bicker</b><br />
+                                   <i>Voice Acting</i>
+                              </p>
+                              <div class="team__social">
+                                   <div class="social__icon">
+                                        <a href="https://twitter.com/douglasbicker" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-twitter" title="Twitter" aria-label="Go to Twitter"></i>
+                                        </a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </article>
+          <div class='post-after'></div>
+     </div>
 </main>
 <footer class="site-footer">
   <div class="inner">
