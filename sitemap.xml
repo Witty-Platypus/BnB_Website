@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>./</loc>
+    <loc>https://www.beersandboomerangs.com</loc>
+  </url>
+  <url>
+    <loc>https://www.beersandboomerangs.com/oculus</loc>
+  </url>
+  <url>
+    <loc>https://www.beersandboomerangs.com/steam</loc>
+  </url>
+  <url>
+    <loc>https://www.beersandboomerangs.com/press_kit</loc>
+  </url>
+  <url>
+    <loc>https://www.beersandboomerangs.com/about_us</loc>
+  </url>
+  <url>
+    <loc>https://www.beersandboomerangs.com/discord</loc>
   </url>
 </urlset>
