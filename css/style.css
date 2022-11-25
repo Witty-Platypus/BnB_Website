@@ -189,6 +189,12 @@ a.buy-game-btn {
     min-width: max(20%, 150px);
 }
 
+a.buy-game-btn.disabled {
+    pointer-events: none;
+    cursor: unset;
+    background-color: grey;
+}
+
 a.buy-game-btn.big {
     min-width: max(35%, 200px);
     padding: 20px 35px;
